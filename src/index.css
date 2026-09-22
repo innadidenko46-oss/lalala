@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-petrol-950: #040e15;
+  --color-petrol-900: #071822;
+  --color-petrol-850: #0a2230;
+  --color-petrol-800: #0e2b3c;
+  --color-petrol-750: #13384e;
+  --color-petrol-700: #194661;
+  --color-petrol-600: #235d81;
+  
+  --color-brand-amber: #f59e0b;
+  --color-brand-gold: #fbbf24;
+  --color-brand-orange: #ea580c;
+  --color-brand-cyan: #0284c7;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+/* Day Mode Architectural Theme */
+.theme-day {
+  color-scheme: light;
+}
+
+.theme-dusk {
+  color-scheme: dark;
+}
+
+.glass-panel {
+  background: rgba(10, 34, 48, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.theme-day .glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.glass-panel-subtle {
+  background: rgba(14, 43, 60, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-day .glass-panel-subtle {
+  background: rgba(241, 245, 249, 0.7);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.amber-gradient-border {
+  border-image: linear-gradient(to right, #f59e0b, #0284c7) 1;
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.25);
+}
+
+.glow-teal {
+  box-shadow: 0 0 25px -5px rgba(2, 132, 199, 0.25);
+}

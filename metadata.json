@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix DOMENCE - Smart Home \u0026 Intercom Systems",
+  "description": "Profesjonalne wdrożenia systemów inteligentnego domu i wideodomofonii IP dla domów i rezydencji. Czysty montaż bez pyłu, pełna prywatność offline i standard inżynieryjny.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
